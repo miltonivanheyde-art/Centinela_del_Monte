@@ -27,3 +27,14 @@ Crear `.vscode/settings.json` con:
   "copilot.enable": true,
   "copilot.chat.enable": true
 }
+```
+
+## 5. Documentación del workflow
+- El flujo operativo obligatorio está descrito en `WORKFLOW.md`.
+- Todas las decisiones críticas deben registrarse mediante ADRs en `docs/`.
+- El proceso de auditoría está definido en `docs/ADR-0002.md`.
+
+## 6. Backups y resiliencia
+- El script de respaldo del proyecto se encuentra en `scripts/Backup-CENTINELA.ps1`.
+- Use `powershell ./scripts/Backup-CENTINELA.ps1 -Compress` para crear copias comprimidas.
+- Ajuste `-BackupRoot` si desea guardar copias en otra carpeta de OneDrive.
