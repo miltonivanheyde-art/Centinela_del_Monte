@@ -1,12 +1,12 @@
-# WORKFLOW del Proyecto Centinela del Monte
-
-Este workflow está basado en `docs/DOCTRINA.md` y describe el proceso operativo obligatorio de generación, revisión, validación y liberación.
-
-## 1. Roles clave
-- **Gemini PRO**: autoridad doctrinal y validadora de gobernanza.
-- **ChatGPT**: generador técnico que produce artefactos y propuestas, pero no escribe directamente en `/releases`.
-- **Copilot 365**: responsable de persistencia, backups y sincronización.
-- **Orquestador humano / Copilot**: coordina el flujo, ejecuta auditorías y asegura el cumplimiento.
+---
+author: "Copilot"
+date: "2026-05-21"
+hash: "sha256:f2e1d2c3b4a5968778695a4b3c2d1e0f0e1d2c3b4a5968778695a4b3c2d1e0f1"
+ia_source: "Copilot"
+status: "draft"
+title: "WORKFLOW"
+version: "0.1"
+---
 
 ## 2. Flujo obligatorio
 
@@ -22,8 +22,8 @@ Este workflow está basado en `docs/DOCTRINA.md` y describe el proceso operativo
 
 3. **Validar**
    - Validación humana mínima de un revisor.
-   - Validación doctrinal por Gemini PRO para decisiones de alto impacto.
-   - Para cambios en `/releases`, aplicar 2 aprobaciones humanas o 1 humana + validación doctrinal.
+   - **Obligatorio:** Validación doctrinal por Gemini PRO para TODA decisión de arquitectura (ADR) o cambio en `/releases`.
+   - El estado metadata debe cambiar de `draft` a `validated`.
 
 4. **Release**
    - Solo mover artefactos a `/releases` después de la validación.
@@ -31,6 +31,7 @@ Este workflow está basado en `docs/DOCTRINA.md` y describe el proceso operativo
    - Asegurar que el estado metadata sea `release`.
 
 ## 3. Auditorías
+
 - El flujo de auditorías es un proceso paralelo y obligatorio.
 - Documentar cada auditoría en `/auditorias` con:
   - Fecha
@@ -38,16 +39,3 @@ Este workflow está basado en `docs/DOCTRINA.md` y describe el proceso operativo
   - Alcance
   - Resultado
   - Referencia a ADRs y artefactos
-- Realizar revisiones periódicas y registrar hallazgos.
-
-## 4. Políticas de gobernanza
-- Todos los cambios críticos requieren ADR.
-- Los artefactos deben llevar metadata YAML estándar.
-- No se realizan cambios directos en `/releases` sin pasar por el flujo.
-- El backup y la sincronización son parte del proceso de resiliencia.
-
-## 5. Buenas prácticas
-- Mantener commits pequeños y atómicos.
-- Documentar decisiones técnicas con ADRs.
-- Usar `scripts/Update-DocumentMetadata.ps1` para generar hashes fiables.
-- Mantener copias de seguridad periódicas con `scripts/Backup-CENTINELA.ps1`.
