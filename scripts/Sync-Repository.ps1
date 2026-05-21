@@ -63,8 +63,8 @@ $Action = {
             
             $logEntry = "`n## [$((Get-Date).ToString('HH:mm:ss'))] Sincronización Exitosa`n`n" +
                         "- **Archivo:** $FileName`n" +
-                        "- **Rama:** ``$currentBranch`` `n" +
-                        "- **Hash:** ``sha256:$currentHash`` `n" +
+                        "- **Rama:** ``$currentBranch```n" +
+                        "- **Hash:** ``sha256:$currentHash```n" +
                         "- **Resultado:** ✅ Metadata, Validación e Integración con Remoto completadas.`n"
             
             Add-Content -Path $syncAuditLog -Value $logEntry -Encoding UTF8

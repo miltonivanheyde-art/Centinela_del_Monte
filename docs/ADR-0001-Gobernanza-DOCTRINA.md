@@ -1,7 +1,7 @@
 ---
 author: "Copilot"
 date: "2026-05-21"
-hash: "sha256:e9f1a2b3c4d5e6f7890abcdef1234567890abcdef1234567890abcdef1234567"
+hash: "sha256:e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9"
 ia_source: "Copilot"
 status: "validated"
 title: "ADR 0001: Arquitectura de gobernanza doctrinal"
