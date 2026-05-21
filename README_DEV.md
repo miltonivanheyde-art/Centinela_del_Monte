@@ -34,6 +34,8 @@ Crear `.vscode/settings.json` con:
 - Todas las decisiones críticas deben registrarse mediante ADRs en `docs/`.
 - El proceso de auditoría está definido en `docs/ADR-0002.md`.
 
+- Nueva ADR: `docs/ADR-0003.md` introduce la validación automática de metadatos y firma antes de promover artefactos a `/releases`.
+
 ## 6. Backups y resiliencia
 - El script de respaldo del proyecto se encuentra en `scripts/Backup-CENTINELA.ps1`.
 - Use `powershell ./scripts/Backup-CENTINELA.ps1 -Compress` para crear copias comprimidas.

@@ -29,5 +29,19 @@
     "vscode.videoPreview": true
   },
   "window.density.editorTabHeight": "default",
-  "github.copilot.chat.agentDebugLog.fileLogging.enabled": true
+  "github.copilot.chat.agentDebugLog.fileLogging.enabled": true,
+  "chat.utilityModel": "copilot/auto",
+  "chat.utilitySmallModel": "copilot/auto",
+  "inlineChat.defaultModel": "Auto (copilot)",
+  "inlineChat.affordance": "editor",
+  "inlineChat.notebookAgent": true,
+  "github.copilot.inlineSuggest.enable": true,
+  "github.copilot.inlineSuggest.autoAccept": true,
+  "[markdown]": {
+    "github.copilot.inlineSuggest.autoAccept": false
+  },
+  "centinela.doctrina.ruta": "docs/DOCTRINA.md",
+  "centinela.doctrina.versión": "v0.1",
+  "centinela.doctrina.integridad": "sha256:<hash>",
+  "centinela.doctrina.modo": "gobernanza"
 }
