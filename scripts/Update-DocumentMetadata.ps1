@@ -1,26 +1,39 @@
-# 2. Calcular integridad con la fecha existente para detectar cambios reales
-$testHeader = Write-YamlHeader $meta
-$testPayload = ($testHeader + $bodyLines) -join "`n" # Normalización a LF para consistencia de Hash
-$testBytes = [System.Text.Encoding]::UTF8.GetBytes($testPayload)
-$currentContentSignature = "sha256:" + [System.BitConverter]::ToString(([System.Security.Cryptography.SHA256]::Create()).ComputeHash($testBytes)).Replace('-', '').ToLowerInvariant()
+# Script: Update-DocumentMetadata.ps1
 
-# 3. Si el hash coincide con el almacenado, no hubo cambios doctrinales. Omitimos actualización.
-if ($currentContentSignature -eq $storedHash) {
-    Write-Host "✅ No se detectaron cambios en el contenido ni metadata de '$Path'. Omitiendo actualización de fecha."
-    return
+Write-Host "=== Actualizando hashes SHA256 ===" -ForegroundColor Cyan
+
+# Obtener todos los archivos markdown
+$files = Get-ChildItem -Recurse -Filter *.md
+
+foreach ($file in $files) {
+    $path = $file.FullName
+
+    # Leer contenido
+    $content = Get-Content -Path $path -Raw
+
+    # Detectar YAML
+    if ($content -match "(?s)^---(.*?)---") {
+
+        $yamlBlock = $matches[1]
+        $body = $content -replace "(?s)^---.*?---", ""
+        # Calcular hash del body
+        $bytes = [System.Text.Encoding]::UTF8.GetBytes($body)
+        $sha256 = [System.Security.Cryptography.SHA256]::Create().ComputeHash($bytes)
+        $hashString = -join ($sha256 | ForEach-Object { "{0:x2}" -f $_ })
+
+        # Reemplazar hash en YAML
+        $newYaml = $yamlBlock -replace 'hash:\s*".*?"', "hash: `"sha256:$hashString`""
+
+        # Reconstruir archivo
+        $newContent = "---$newYaml`n---`n$body"
+        Set-Content -Path $path -Value $newContent -Encoding UTF8
+
+        Write-Host "✔ $($file.Name) actualizado" -ForegroundColor Green
+    }
+    else {
+        Write-Host "⚠ $($file.Name) sin YAML" -ForegroundColor Yellow
+    }
 }
 
-# 4. Si hay cambios, actualizamos la fecha y recalculamos el hash final
-$meta['date'] = (Get-Date).ToString('yyyy-MM-dd')
-$meta['hash'] = "" # El hash siempre se recalcula
+Write-Host "=== Finalizado ===" -ForegroundColor Cyan
 
-$yamlHeader = Write-YamlHeader $meta
-$hashPayload = ($yamlHeader + $bodyLines) -join "`n" # Normalización a LF para consistencia de Hash
-$hashBytes = [System.Text.Encoding]::UTF8.GetBytes($hashPayload)
-$sha256 = [System.BitConverter]::ToString(([System.Security.Cryptography.SHA256]::Create()).ComputeHash($hashBytes)).Replace('-', '').ToLowerInvariant()
-$meta['hash'] = "sha256:$sha256"
-
-$yamlHeader = Write-YamlHeader $meta
-$result = ($yamlHeader + $bodyLines) -join "`r`n"
-Set-Content -Path $absolutePath -Value $result -Encoding UTF8
-Write-Host "Metadata updated for '$Path' with hash $sha256."

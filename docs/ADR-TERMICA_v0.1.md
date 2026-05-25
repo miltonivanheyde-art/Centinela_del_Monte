@@ -1,12 +1,14 @@
 ---
 author: "Gemini PRO"
 date: "2026-05-21"
-hash: "sha256:a1b2c3d4e5f67890abcdef1234567890abcdef1234567890abcdef123456789"
+hash: "sha256:14711fcc7ee615838054ecc2ac3dca7f8011a95f6889ee7a3486f184410f3b84"
 reviewed_by: "Milton Heyde"
 status: "validated"
 title: "ADR-TERMICA: Umbrales de Seguridad"
 version: "v0.1"
+
 ---
+
 
 # ADR-TERMICA: Control de Temperatura
 

@@ -1,17 +1,20 @@
 ---
 author: "Gemini PRO"
 date: "2026-05-20"
-hash: "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+hash: "sha256:03ea55420a2d60aede5556cc1ce26679c4c5e3132b3cd7a89802caf04fc0411e"
 ia_source: "Gemini Code Assist"
 model_version: "1.5-Pro"
-status: "draft"
+status: "validated"
 title: "Estado Actual del Sistema"
 version: "v0.1"
+
 ---
 
-## Fase actual: Fase 1 - Prototipado y Gobernanza
+
+## Fase actual: Fase 2 - Implementación Técnica
 
 ### Hitos Alcanzados
+- [x] Refactorización completa de la infraestructura (Doctrina -> Ingeniería).
 - [x] Definición de Pinout v0.1 para ESP32-S3.
 - [x] Implementación de scripts de validación de integridad (PowerShell).
 - [x] Definición del flujo de trabajo (WORKFLOW.md).

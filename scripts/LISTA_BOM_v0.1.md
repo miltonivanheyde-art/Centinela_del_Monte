@@ -1,13 +1,15 @@
 ---
 author: "Gemini Code Assist"
 date: "2026-05-21"
-hash: "sha256:a1b2c3d4e5f67890abcdef1234567890abcdef1234567890abcdef1234567890"
+hash: "sha256:0530a636c077f8955407e9a01f9498a02393f818c7527786d7467235fdfa68ff"
 ia_source: "Gemini Code Assist"
 reviewed_by: "Milton Heyde"
 status: "validated"
 title: "Lista de Materiales (BOM) - Prototipo v0.1"
 version: "v0.1"
+
 ---
+
 
 ## Lista de Materiales (BOM) - Prototipo v0.1
 

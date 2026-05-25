@@ -1,13 +1,14 @@
 ---
 author: "Gemini PRO"
 date: "2026-05-21"
-hash: "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+hash: "sha256:459783584c97fb3b7798efd41e94b891acdb6dfd5237f4bb6ce7b3f4cfc1f4aa"
 ia_source: "Gemini Code Assist"
-model_version: "1.5-Pro"
 status: "validated"
 title: "Registro de Decisiones de Arquitectura (ADR)"
 version: "v0.1"
+
 ---
+
 
 ## Registro de Decisiones de Arquitectura (ADR)
 

@@ -1,12 +1,14 @@
 ---
 author: "Copilot"
 date: "2026-05-21"
-hash: "sha256:6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e"
+hash: "sha256:13da9fbf6676deac5bc64b13e89fc8b28e905312e57f60a04ffb76493f23234f"
 ia_source: "Copilot"
 status: "draft"
 title: "README_DEV"
 version: "0.1"
+
 ---
+
 
 ## 🧠 Guía de Desarrollo – Proyecto Centinela del Monte
 
@@ -43,3 +45,4 @@ Crear `.vscode/settings.json` con:
   "copilot.chat.enable": true
 }
 ```
+

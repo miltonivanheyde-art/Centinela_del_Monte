@@ -6,8 +6,10 @@ ia_source: "Gemini Code Assist"
 status: "validated"
 version: "v0.1"
 date: "2026-05-21"
-hash: "sha256:b83c7e0a8f1d2c3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e"
+hash: "sha256:b755b20fa19ba32c08d4f774289d928db9f665f6c101aab960e9cacb530c7703"
+
 ---
+
 
 # Especificaciones Detalladas de Sensores
 

@@ -1,12 +1,14 @@
 ---
 author: "Gemini PRO"
 date: "2026-05-21"
-hash: "sha256:c7d8e9f0a1b2c3d4e5f67890abcdef1234567890abcdef1234567890a1b2c3"
+hash: "sha256:9c3085cb2dfec08690a4a3970fb612d5363869981273d8b197f821f321b8f9bf"
 reviewed_by: "Milton Heyde"
 status: "validated"
 title: "ADR-ENERGIA: Gestión de Potencia"
 version: "v0.1"
+
 ---
+
 
 # ADR-ENERGIA: Estrategia de Alimentación
 

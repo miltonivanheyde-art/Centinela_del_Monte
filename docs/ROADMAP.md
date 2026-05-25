@@ -1,12 +1,14 @@
 ---
 author: "Gemini PRO"
 date: "2026-05-21"
-hash: "sha256:9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e"
+hash: "sha256:cb5f2e6e7181b1728907d6579dd7ab3d55ad3616107e6accf5d5c88f1e1df111"
 reviewed_by: "Milton Heyde"
 status: "validated"
 title: "Roadmap de Ingeniería"
 version: "v0.1"
+
 ---
+
 
 ## Roadmap de Ingeniería - Fase I
 
@@ -29,3 +31,4 @@ version: "v0.1"
 - [ ] Primer despliegue en `/staging` de firmware v0.1.
 - [ ] Pruebas de integración de Heartbeat.
 - [ ] Auditoría técnica de consumo energético.
+

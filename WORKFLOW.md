@@ -1,12 +1,14 @@
 ---
 author: "Copilot"
 date: "2026-05-21"
-hash: "sha256:f2e1d2c3b4a5968778695a4b3c2d1e0f0e1d2c3b4a5968778695a4b3c2d1e0f1"
+hash: "sha256:629fbcff3b423b35812f40a8ea475368ef238987887ec098794af6ae9a09e10d"
 ia_source: "Copilot"
 status: "draft"
 title: "WORKFLOW"
 version: "0.1"
+
 ---
+
 
 ## 2. Flujo obligatorio
 
@@ -39,3 +41,4 @@ version: "0.1"
   - Alcance
   - Resultado
   - Referencia a ADRs y artefactos
+
