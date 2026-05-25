@@ -3,6 +3,10 @@
     "**/.git": true,
     "**/.DS_Store": true
   },
+  "files.watcherExclude": {
+    "**/auditorias/**": true,
+    "**/releases/**": true
+  },
   "editor.formatOnSave": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -36,11 +40,19 @@
   "inlineChat.affordance": "editor",
   "inlineChat.notebookAgent": true,
   "github.copilot.inlineSuggest.enable": true,
-  "github.copilot.inlineSuggest.autoAccept": false,
+  "github.copilot.inlineSuggest.autoAccept": true,
   "[markdown]": {
-  "github.copilot.inlineSuggest.autoAccept": false
+    "github.copilot.inlineSuggest.autoAccept": false
   },
-  "[powershell]": {
-  "github.copilot.inlineSuggest.autoAccept": true
+  "centinela.doctrina.ruta": "docs/DOCTRINA.md",
+  "centinela.doctrina.versión": "v0.1",
+  "centinela.doctrina.integridad": "sha256:<hash>",
+  "centinela.doctrina.modo": "gobernanza",
+  "centinela.doctrina.verificacionAutomatica": {
+    "script": "scripts/Validate-Artifact.ps1",
+    "ruta": "docs/DOCTRINA.md",
+    "evento": "onStartup",
+    "accion": "validar_integridad",
+    "registro": "auditorias/VALIDACION-AUTO.md"
   }
 }

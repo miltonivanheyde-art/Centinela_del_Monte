@@ -4,55 +4,24 @@ param(
 )
 
 # Leer contenido del archivo
-$content = Get-Content -Raw -Path $Path
-$lines = $content -split "`r?`n"
+$content = Get-Content -Path $Path -Raw
 
-# Identificar Front Matter
-$hasFrontMatter = $false
-$headerEndIndex = -1
-if ($lines.Count -gt 0 -and $lines[0].Trim() -eq '---') {
-    for ($i = 1; $i -lt $lines.Count; $i++) {
-        if ($lines[$i].Trim() -eq '---') {
-            $headerEndIndex = $i
-            $hasFrontMatter = $true
-            break
-        }
-    }
+# Extraer el hash almacenado en los metadatos usando regex
+if ($content -match 'hash:\s*"sha256:(?<val>[a-f0-9]+)"') {
+    $storedHash = $Matches['val']
+}
+else {
+    $storedHash = $null
 }
 
-if (-not $hasFrontMatter) { throw "El archivo no contiene metadatos YAML válidos." }
-
-$yamlLines = $lines[1..($headerEndIndex - 1)]
-$bodyLines = if ($headerEndIndex + 1 -lt $lines.Count) { $lines[($headerEndIndex + 1)..($lines.Count - 1)] } else { @() }
-
-# Parsear metadatos para obtener el hash y preparar la base de firma
-$meta = @{}
-foreach ($line in $yamlLines) {
-    if ($line -match '^(?<key>[^:]+)\s*:\s*(?<value>.*)$') {
-        $meta[$Matches['key'].Trim()] = $Matches['value'].Trim(' "')
-    }
-}
-
-$storedHash = if ($meta.ContainsKey('hash')) { $meta['hash'].Replace('sha256:', '') } else { $null }
-$meta['hash'] = "" # Signature Base
-
-# Reconstrucción idéntica a Update-DocumentMetadata.ps1
-function Get-SignatureBase($metadata, $body) {
-    $header = @('---')
-    foreach ($key in $metadata.Keys | Sort-Object) {
-        if ($null -ne $metadata[$key]) {
-            $header += $key + ': "' + $metadata[$key] + '"'
-        }
-    }
-    $header += '---'
-    return ($header + $body) -join "`r`n"
-}
-
-$contentForValidation = Get-SignatureBase $meta $bodyLines
+# Normalización Doctrinal: Para evitar la dependencia circular, reemplazamos el valor 
+# del hash por una cadena vacía ("") antes de calcular la integridad. 
+# Esto replica la carga útil usada en scripts/Update-DocumentMetadata.ps1.
+$contentForValidation = $content -replace 'hash:\s*"sha256:[a-f0-9]*"', 'hash: ""'
 
 # Calcular hash real
 $bytes = [System.Text.Encoding]::UTF8.GetBytes($contentForValidation)
-$sha256 = [System.Security.Cryptography.SHA256]::Create()
+$sha256 = New-Object System.Security.Cryptography.SHA256Managed
 $calculatedHash = [System.BitConverter]::ToString($sha256.ComputeHash($bytes)).Replace('-', '').ToLowerInvariant()
 
 # Validar coincidencia
