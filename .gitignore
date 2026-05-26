@@ -106,3 +106,7 @@ test_*.c
 # auditorias SIEMPRE versionadas
 !auditorias/
 !auditorias/**
+
+# Eclipse / CDT
+.cproject
+.project
