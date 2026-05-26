@@ -1,14 +1,16 @@
----
+﻿---
 author: "Gemini PRO"
 date: "2026-05-20"
-hash: "sha256:d02972ee72145aaeb84425bc5b40e73e2a2e51cc21ebb81e7977954ee442c447"
+hash: "sha256:40763a0a2098b6cc64bf97fb4df934f15e817daab18fcb93b6ed32077cda7ad0"
 ia_source: "Gemini Code Assist"
 model_version: "1.5-Pro"
 status: "validated"
 title: "Mapa de Arquitectura del Sistema Centinela del Monte"
 version: "v0.1"
 
+
 ---
+
 
 
 ## Visión General de Capas y Flujos
@@ -92,3 +94,4 @@ graph TD
 6.  **Backend**: Infraestructura para la recolección y gestión de datos.
 7.  **Tests**: Verificación de la conformidad de la implementación.
 8.  **Operaciones y Trazabilidad**: Automatización, auditoría y gestión del ciclo de vida del artefacto.
+

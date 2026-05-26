@@ -1,10 +1,10 @@
-/*
+﻿/*
  * @file main.c
  * @brief Punto de entrada del Nodo Centinela
  * @version v0.1
  * @status validated
  * @date 2026-05-21
- * @hash sha256:pending_hash
+ * @hash sha256:bccd927f414d01a9300b0c1a097c754f733628fa8c2a71af6ca09a21de3e2ca1
  *
  * Reglas:
  * - Sin YAML

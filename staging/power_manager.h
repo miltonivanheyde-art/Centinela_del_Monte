@@ -1,10 +1,11 @@
+-- -title : "Contrato de Gestión de Energía" version : "v0.6" status : "validated" author : "Gemini Code Assist" ia_source : "Gemini Code Assist" date : "2026-05-21" hash : "sha256:pending_hash" -- - -- -title : "Contrato de Gestión de Energía" version : "v0.6" status : "validated" author : "Gemini Code Assist" ia_source : "Gemini Code Assist" date : "2026-05-21" hash : "sha256:pending_hash" -- -
 /*
  * title: Contrato de Gestión de Energía
  * version: v0.6
  * status: validated
  * author: Gemini Code Assist
  * ia_source: Gemini Code Assist
- * date: 2026-05-25
+ * date: 2026-05-21
  * hash: sha256:pending_hash
  */
 
@@ -19,8 +20,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-/** @brief Inicializa periféricos de potencia (ADC y GPIO Control). */
-void power_manager_init(void);
+                                                                                                                                                                                                                                                                                                                                                                                     /** @brief Inicializa periféricos de potencia (ADC y GPIO Control). */
+                                                                                                                                                                                                                                                                                                                                                                                     void power_manager_init(void);
 
 /** @brief Obtiene el voltaje de batería en mV. */
 uint16_t get_battery_voltage(void);

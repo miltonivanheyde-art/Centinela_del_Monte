@@ -1,10 +1,10 @@
-/*
+﻿/*
  * @file power_manager.c
  * @brief Gestión determinística de energía para ESP32-S3.
  * @version v0.6
  * @status validated
  * @date 2026-05-21
- * @hash sha256:pending_hash
+ * @hash sha256:91b6b736e05a77ef22f111ac76e9d8c7abcaaf01cd23f3cd7612e2445da4a18b
  *
  * Reglas:
  * - Sin YAML en código

@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "centinela_del_monte",
-    "project_version":    "3aaaf0b-dirty",
+    "project_version":    "d5a37bf-dirty",
     "project_path":       "H:/esp/CENTINELA_DEL_MONTE",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "H:/esp/CENTINELA_DEL_MONTE/build",

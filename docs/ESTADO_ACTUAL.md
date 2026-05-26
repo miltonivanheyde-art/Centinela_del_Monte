@@ -1,14 +1,16 @@
----
+﻿---
 author: "Gemini PRO"
 date: "2026-05-20"
-hash: "sha256:03ea55420a2d60aede5556cc1ce26679c4c5e3132b3cd7a89802caf04fc0411e"
+hash: "sha256:b29d7df9c9a4bf8f390ac0ec3588767d9e8349e2430c32e188cddd8c8a89b247"
 ia_source: "Gemini Code Assist"
 model_version: "1.5-Pro"
 status: "validated"
 title: "Estado Actual del Sistema"
 version: "v0.1"
 
+
 ---
+
 
 
 ## Fase actual: Fase 2 - Implementación Técnica
@@ -23,3 +25,4 @@ version: "v0.1"
 - [ ] Implementación de la FSM (Finite State Machine) en C++/Arduino.
 - [ ] Pruebas de consumo en Deep Sleep con el MOSFET de corte.
 - [ ] Validación de la cadena LoRa punto a punto.
+

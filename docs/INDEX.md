@@ -1,13 +1,15 @@
----
+﻿---
 title: "Índice de Decisiones de Arquitectura (ADRs)"
 version: "v0.1"
 status: "validated"
 author: "Gemini Code Assist"
 ia_source: "Gemini PRO"
 date: "2026-05-21"
-hash: "sha256:683c89291675aa89d4deac112b95b8d5b70db3a6313768e7ec1357a140a43c48"
+hash: "sha256:5ae1c3a928b4a723209ec8068a0441ce7f0b236f58303833308275b6fe351ab5"
+
 
 ---
+
 
 ## Propósito
 
@@ -28,3 +30,4 @@ Este documento sirve como índice centralizado para todas las Decisiones de Arqu
 
 - Para entender una decisión específica, consulte el archivo ADR correspondiente en esta misma carpeta.
 - Las dependencias indican otros documentos o ADRs relevantes para la comprensión completa de la decisión.
+

@@ -1,14 +1,16 @@
----
+﻿---
 author: "Gemini Code Assist"
 date: "2026-05-21"
-hash: "sha256:0530a636c077f8955407e9a01f9498a02393f818c7527786d7467235fdfa68ff"
+hash: "sha256:0ddda8760fcca8357df7667a14517af2c133bf55a8abcdcbe7df7695b54073a2"
 ia_source: "Gemini Code Assist"
 reviewed_by: "Milton Heyde"
 status: "validated"
 title: "Lista de Materiales (BOM) - Prototipo v0.1"
 version: "v0.1"
 
+
 ---
+
 
 
 ## Lista de Materiales (BOM) - Prototipo v0.1
@@ -44,3 +46,4 @@ version: "v0.1"
 ## 6. Notas de Ensamblaje
 
 Se recomienda el uso de soldadura sin plomo con aleación SAC305 para mitigar la fatiga mecánica por ciclos térmicos mencionada en el **ADR-0001**.
+

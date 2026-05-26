@@ -1,12 +1,14 @@
----
+﻿---
 title: "Gemini — Ingeniero Principal de Firmware (VS Code)"
 author: "Sistema CENTINELA_DEL_MONTE"
 ia_source: "Gemini Code Assist"
 version: "v1.2"
 date: "2026-05-25"
 status: "validated"
-hash: "sha256:pending_hash"
+hash: "sha256:fec004dc3b6f4ce710436a4f26f72ed7dc579469701a86782008acf094dcb8d3"
+
 ---
+
 
 # ⚙️ Gemini — Ingeniero de Firmware (Centinela del Monte)
 

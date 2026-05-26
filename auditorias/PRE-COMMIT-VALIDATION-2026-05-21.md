@@ -1,12 +1,14 @@
----
+﻿---
 title: "Reporte de Auditoría Pre-Commit"
 author: "Gemini Code Assist"
 ia_source: "Gemini Code Assist"
 version: "v0.1"
 date: "2026-05-21"
 status: "draft"
-hash: "sha256:pending_hash"
+hash: "sha256:e244dfe2392596dcccadfd2d0aa24e652b008875ba3df6cbc6cfeaed334151af"
+
 ---
+
 
 ## Resumen Ejecutivo
 Este reporte detalla la auditoría final de los artefactos de firmware y documentación antes de un commit y push. Se han identificado y resuelto errores críticos de compilación/lógica y se han alineado las implementaciones con la doctrina. Se listan acciones obligatorias y riesgos conocidos.

@@ -1,12 +1,14 @@
----
+﻿---
 title: "Manual de Scripts de Automatización e Integridad"
 author: "Gemini Code Assist"
 ia_source: "Gemini Code Assist"
 version: "v0.1"
 date: "2026-05-21"
 status: "validated"
-hash: "sha256:39f848074d209351e031023258c4083391763717e1302821689252033c5e7b29"
+hash: "sha256:965f494c7face19a5c4936e2a89d96d32990020276ea60730e657eafee942ca9"
+
 ---
+
 
 # Scripts de Automatización — Centinela del Monte
 

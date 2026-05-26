@@ -1,10 +1,10 @@
-/*
+﻿/*
  * @file heartbeat.c
  * @brief Empaqueta y registra el latido doctrinal.
  * @version v0.1
  * @status validated
  * @date 2026-05-21
- * @hash sha256:pending_hash
+ * @hash sha256:125e55832d15b21e5b7892d627b1bdba4bbf293bf4d3bafb6bb2ef6d58aa0a1b
  *
  * Ref: docs/HEARTBEAT_v0.1.md
  */
