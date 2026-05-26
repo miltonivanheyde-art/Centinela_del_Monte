@@ -3,6 +3,7 @@
 ✅ Todos los archivos en /firmware y /hardware cumplen con el esquema obligatorio.
 
 ### Resumen de integridad:
+
 - **Capa Firmware:** 3/3 archivos válidos.
 - **Capa Hardware:** 3/3 archivos válidos.
 
