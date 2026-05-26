@@ -1,47 +1,45 @@
-param(
-    [Parameter(Mandatory = $true)]
-    [string]$Path
-)
+# 1. Calcular Hash SHA256 del cuerpo (Body)
+$sha256 = [System.Security.Cryptography.SHA256Managed]::new()
+$bytes = [System.Text.Encoding]::UTF8.GetBytes($body)
+$hashBytes = $sha256.ComputeHash($bytes)
+$calculatedHash = "sha256:$(([System.BitConverter]::ToString($hashBytes) -replace '-').ToLower())"
 
-# Leer contenido del archivo
-$content = Get-Content -Path $Path -Raw
+# 2. Extraer Hash Registrado
+$registeredHash = "none"
 
-# Extraer el hash almacenado en los metadatos usando regex
-if ($content -match 'hash:\s*"sha256:(?<val>[a-f0-9]+)"') {
-    $storedHash = $Matches['val']
+# Detectar hash según formato (YAML key o @hash tag)
+if ($yamlBlock -match "(?m)^[\s\*]*hash:\s*\"?(sha256:[a-f0-9] { 64 })\"?") {
+    $registeredHash = $Matches[1]
+}
+elseif ($yamlBlock -match "@hash\s+(sha256:[a-f0-9]{64})") {
+    $registeredHash = $Matches[1]
+}
+
+$status = "FAIL"
+if ($calculatedHash -eq $registeredHash) {
+    $status = "PASS"
+    Write-Host "  [PASS] $($file.Name)" -ForegroundColor Green
 }
 else {
-    $storedHash = $null
+    $globalSuccess = $false
+    Write-Host "  [FAIL] $($file.Name) - Hash Mismatch" -ForegroundColor Red
 }
 
-# Normalización Doctrinal: Para evitar la dependencia circular, reemplazamos el valor 
-# del hash por una cadena vacía ("") antes de calcular la integridad. 
-# Esto replica la carga útil usada en scripts/Update-DocumentMetadata.ps1.
-$contentForValidation = $content -replace 'hash:\s*"sha256:[a-f0-9]*"', 'hash: ""'
-
-# Calcular hash real
-$bytes = [System.Text.Encoding]::UTF8.GetBytes($contentForValidation)
-$sha256 = New-Object System.Security.Cryptography.SHA256Managed
-$calculatedHash = [System.BitConverter]::ToString($sha256.ComputeHash($bytes)).Replace('-', '').ToLowerInvariant()
-
-# Validar coincidencia
-if ($storedHash -eq $calculatedHash) {
-    $status = "✅ Hash válido"
+$results += [PSCustomObject]@{
+    Archivo    = $file.Name
+    Estado     = $status
+    Registrado = $registeredHash
+    Calculado  = $calculatedHash
+}
 }
 else {
-    $status = "❌ Hash inconsistente"
+    Write-Host "  [SKIP] $($file.Name) - Sin bloque YAML doctrinal" -ForegroundColor Yellow
+}
 }
 
-# Registrar auditoría
-$report = @"
-# Auditoría de Validación — $(Get-Date -Format 'yyyy-MM-dd')
-Archivo: $Path
-Resultado: $status
-Hash calculado: $calculatedHash
-"@
-$outdir = "auditorias"
-if (-not (Test-Path $outdir)) { New-Item -Path $outdir -ItemType Directory | Out-Null }
-$report | Out-File "$outdir/VALIDACION-$(Get-Date -Format 'yyyy-MM-dd').md" -Encoding UTF8
-Write-Host $status
-Write-Host "Hash Calculado: $calculatedHash"
-Write-Host "Reporte escrito en: $outdir/VALIDACION-$(Get-Date -Format 'yyyy-MM-dd').md"
+# Generar Reporte de Auditoría
+$reportHeader = @"
+---
+title: "Reporte de Validación de Integridad"
+author: "Gemini Code Assist"
+version: "v1.0"

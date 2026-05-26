@@ -1,13 +1,95 @@
----
+﻿---
 title: "Contexto del Proyecto - Centinela del Monte"
 author: "Gemini PRO"
 ia_source: "Gemini Code Assist"
 version: "v0.1"
 date: "2026-05-20"
 status: "validated"
-hash: "sha256:4e6c3686f2854b5cceec9aeac1dc81eac3aee165b722c3fcb5d1465e7cf5ab19"
+hash: "sha256:962e457d81666c8403a8665c4e8df05804ee3a89060170be73ac515191eae0ec"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Visión General
@@ -33,3 +115,44 @@ Este repositorio actúa como la "Memoria Maestra" del sistema, donde cada decisi
 1. Integridad sobre Velocidad
 2. Resiliencia de Hardware
 3. Trazabilidad IA-Humano
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

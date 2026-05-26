@@ -1,14 +1,96 @@
----
+﻿---
 author: "Gemini PRO"
 date: "2026-05-21"
-hash: "sha256:f83f3d3c62795d175cdbd3e2152b7b82e9f06f6f3d60d35140b1dec44cf0bee5"
+hash: "sha256:e1811c1d95873d2832da5f763842c6e683d805c6a21251042ddb885a02bc9ac0"
 ia_source: "Gemini Code Assist"
 reviewed_by: "Milton Heyde"
 status: "validated"
 title: "Especificaciones Detalladas Mecánicas y Térmicas"
 version: "v0.1"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Especificaciones Detalladas Mecánicas y Térmicas
@@ -25,4 +107,45 @@ version: "v0.1"
 - **Temperatura Operativa:** -40°C a +60°C.
 - **Humedad:** 0% a 100% (sin condensación).
 - **Vibración:** Resistencia a vibraciones según estándar IEC 60068-2-6.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

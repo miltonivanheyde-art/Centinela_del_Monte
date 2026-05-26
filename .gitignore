@@ -1,0 +1,18 @@
+# ESP-IDF build
+build/
+main/build/
+
+# logs
+*.log
+
+# temp
+*.tmp
+*.bak
+*.orig
+
+# IDE
+.cproject
+.project
+
+# misc
+compile_commands.json

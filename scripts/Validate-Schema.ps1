@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Valida que todos los archivos Markdown en las capas técnicas (/firmware y /hardware)
+    Valida que todos los archivos Markdown y código fuente en las capas técnicas
     cumplan con el esquema de metadatos YAML obligatorio definido en la DOCTRINA.
 #>
 
@@ -22,7 +22,7 @@ foreach ($layer in $technicalLayers) {
         continue
     }
 
-    $files = Get-ChildItem -Path $fullPath -Filter "*.md" -File -Recurse
+    $files = Get-ChildItem -Path $fullPath -File -Recurse | Where-Object { $_.Extension -match '\.(md|c|h)$' }
     Write-Host "`nEscaneando: /$layer ($($files.Count) archivos)" -ForegroundColor Yellow
 
     foreach ($file in $files) {

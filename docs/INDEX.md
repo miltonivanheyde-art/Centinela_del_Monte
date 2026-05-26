@@ -1,16 +1,98 @@
----
+﻿---
 title: "Índice de Decisiones de Arquitectura (ADRs)"
 version: "v0.1"
 status: "validated"
 author: "Gemini Code Assist"
 ia_source: "Gemini PRO"
 date: "2026-05-21"
-hash: "sha256:683c89291675aa89d4deac112b95b8d5b70db3a6313768e7ec1357a140a43c48"
+hash: "sha256:d6cc30f6bab3f9ff1be21b4b7fbdde66c7af61c7f0a1311f8e51fe1dcb4b825c"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Propósito
+
 Este documento sirve como índice centralizado para todas las Decisiones de Arquitectura (ADRs) del proyecto Centinela del Monte, facilitando la navegación y comprensión de las decisiones clave que rigen el sistema.
 
 ## Índice de ADRs
@@ -25,5 +107,47 @@ Este documento sirve como índice centralizado para todas las Decisiones de Arqu
 | ADR-0007 | Unificación de Intervalo de Heartbeat | Validado | Consumo, Comunicación | `docs/HEARTBEAT_v0.1.md` |
 
 ## Cómo Usar este Índice
+
 - Para entender una decisión específica, consulte el archivo ADR correspondiente en esta misma carpeta.
 - Las dependencias indican otros documentos o ADRs relevantes para la comprensión completa de la decisión.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
