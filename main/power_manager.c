@@ -4,7 +4,7 @@
  * @version v0.6
  * @status validated
  * @date 2026-05-21
- * @hash sha256:91b6b736e05a77ef22f111ac76e9d8c7abcaaf01cd23f3cd7612e2445da4a18b
+ * @hash sha256:b21cd5fe79aa7e6d919241a7369d106bf066af81cc5e7c3845fed560501ad6b2
  *
  * Reglas:
  * - Sin YAML en código
@@ -166,3 +166,43 @@ void enter_deep_sleep(uint32_t duration_min)
     ESP_LOGI(TAG, "[MOCK] Deep sleep: %u min", (unsigned)duration_min);
 #endif
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

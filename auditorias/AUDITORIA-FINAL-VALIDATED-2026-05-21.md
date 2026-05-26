@@ -5,7 +5,87 @@ date: "2026-05-21"
 status: "validated"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -23,5 +103,45 @@ Se ha completado la validación masiva de los artefactos en la carpeta `docs/`. 
 | `ADR-0006-Unificacion-Heartbeat.md` | v0.1 | validated | ✅ OK |
 | `ADR-ENERGIA_v0.1.md` | v0.1 | validated | ✅ OK |
 | `ADR-HEARTBEAT_v0.1.md` | v0.1 | validated | ✅ OK |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

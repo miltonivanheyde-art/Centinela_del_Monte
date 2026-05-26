@@ -6,7 +6,12 @@ $calculatedHash = "sha256:$(([System.BitConverter]::ToString($hashBytes) -replac
 
 # 2. Extraer Hash Registrado
 $registeredHash = "none"
-if ($yamlBlock -match "(?m)^hash:\s*\"?(sha256:[a-f0-9] { 64 })\"?") {
+
+# Detectar hash según formato (YAML key o @hash tag)
+if ($yamlBlock -match "(?m)^[\s\*]*hash:\s*\"?(sha256:[a-f0-9] { 64 })\"?") {
+    $registeredHash = $Matches[1]
+}
+elseif ($yamlBlock -match "@hash\s+(sha256:[a-f0-9]{64})") {
     $registeredHash = $Matches[1]
 }
 

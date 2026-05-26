@@ -1,12 +1,12 @@
--- -title : "Implementación del Gestor de Energía" version : "v0.6" status : "validated" author : "Gemini Code Assist" ia_source : "Gemini Code Assist" date : "2026-05-21" hash : "sha256:49c0604869680373801869680373801869680373801869680373801869680373" -- - -- -title : "Implementación del Gestor de Energía" version : "v0.6" status : "validated" author : "Gemini Code Assist" ia_source : "Gemini Code Assist" date : "2026-05-21" hash : "sha256:49c0604869680373801869680373801869680373801869680373801869680373" -- -
+﻿-- -title : "Implementación del Gestor de Energía" version : "v0.6" status : "validated" author : "Gemini Code Assist" ia_source : "Gemini Code Assist" date : "2026-05-21" hash : "sha256:49c0604869680373801869680373801869680373801869680373801869680373" -- - -- -title : "Implementación del Gestor de Energía" version : "v0.6" status : "validated" author : "Gemini Code Assist" ia_source : "Gemini Code Assist" date : "2026-05-21" hash : "sha256:49c0604869680373801869680373801869680373801869680373801869680373" -- -
 /*
- * title: Implementación del Gestor de Energía
- * version: v0.6
- * status: validated
- * author: Gemini Code Assist
- * ia_source: Gemini Code Assist
- * date: 2026-05-21
- * hash: sha256:49c0604869680373801869680373801869680373801869680373801869680373
+ * @title Implementación del Gestor de Energía
+ * @version v0.6
+ * @status validated
+ * @author Gemini Code Assist
+ * @ia_source Gemini Code Assist
+ * @date 2026-05-25
+ * @hash sha256:5a0c949f3fab704b098f04b4c730f5e2842f406e8e5d4edb234d6c98fd2c6d21
  */
 
 /**
@@ -115,3 +115,15 @@ void enter_deep_sleep(uint32_t duration_min)
     ESP_LOGI(TAG, "[MOCK] Entrando en Deep Sleep por %u min.", duration_min);
 #endif
 }
+
+
+
+
+
+
+
+
+
+
+
+

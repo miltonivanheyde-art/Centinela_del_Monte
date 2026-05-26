@@ -1,12 +1,12 @@
--- -title : "Contrato de Gestión de Energía" version : "v0.6" status : "validated" author : "Gemini Code Assist" ia_source : "Gemini Code Assist" date : "2026-05-21" hash : "sha256:pending_hash" -- - -- -title : "Contrato de Gestión de Energía" version : "v0.6" status : "validated" author : "Gemini Code Assist" ia_source : "Gemini Code Assist" date : "2026-05-21" hash : "sha256:pending_hash" -- -
+﻿-- -title : "Contrato de Gestión de Energía" version : "v0.6" status : "validated" author : "Gemini Code Assist" ia_source : "Gemini Code Assist" date : "2026-05-21" hash : "sha256:pending_hash" -- - -- -title : "Contrato de Gestión de Energía" version : "v0.6" status : "validated" author : "Gemini Code Assist" ia_source : "Gemini Code Assist" date : "2026-05-21" hash : "sha256:pending_hash" -- -
 /*
- * title: Contrato de Gestión de Energía
- * version: v0.6
- * status: validated
- * author: Gemini Code Assist
- * ia_source: Gemini Code Assist
- * date: 2026-05-21
- * hash: sha256:pending_hash
+ * @title Contrato de Gestión de Energía
+ * @version v0.6
+ * @status validated
+ * @author Gemini Code Assist
+ * @ia_source Gemini Code Assist
+ * @date 2026-05-25
+ * @hash sha256:63f717c5c7b875732549cf274de549caf205fb1943569db4b5ab7559c03c0ed3
  */
 
 /**
@@ -36,3 +36,15 @@ void set_peripheral_power(bool on);
 void enter_deep_sleep(uint32_t duration_min);
 
 #endif // POWER_MANAGER_H
+
+
+
+
+
+
+
+
+
+
+
+

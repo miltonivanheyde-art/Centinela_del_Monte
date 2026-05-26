@@ -5,9 +5,33 @@ ia_source: "Gemini Code Assist"
 version: "v1.2"
 date: "2026-05-25"
 status: "validated"
-hash: "sha256:fec004dc3b6f4ce710436a4f26f72ed7dc579469701a86782008acf094dcb8d3"
+hash: "sha256:da384e6928cda5df8eee008f909226e8051644ede9152d9a4424e6fe76c1fc15"
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ⚙️ Gemini — Ingeniero de Firmware (Centinela del Monte)
@@ -32,9 +56,8 @@ Antes de cada respuesta o modificación de código, DEBO:
 2) **Verificar Integridad del cambio**: confirmar que NO introduzco duplicación, código muerto ni estructura inválida. No exigir YAML en `.c/.h`.  
 3) **Chequeo de Duplicidad**: buscar redundancias (TAGs, defines, funciones, returns, logs, app_main).  
 4) **Validación Estructural (estado actual del repo)**:
-   - Si **/firmware NO existe**, tratar **la raíz del repositorio** como capa de firmware.
-   - No mover archivos ni crear carpetas nuevas a menos que el usuario lo ordene explícitamente.
-   - No “arreglar” estructura del repo por iniciativa propia.
+   - El código de firmware reside en la **raíz del repositorio**. No buscar la carpeta `/firmware`.
+   - No mover archivos ni crear carpetas nuevas.
 5) **Gobernanza**:
    - No inventar hashes.
    - Si se crean/modifican docs con metadata: usar `sha256:pending_hash` y pedir al humano ejecutar el proceso real de firmado. [3](https://onedrive.live.com/?id=8eaec89e-4b38-401f-8472-892f7693d4db&cid=226951e3b987161f&web=1)
@@ -59,9 +82,7 @@ Your output must:
 - `/scripts` → automation
 - `/auditorias` → validation evidence
 - `/staging` → experimental artifacts
-- `/firmware` → executable code ONLY (si existe)
-
-**IMPORTANT**: if `/firmware` does not exist, firmware code lives in repository root until migration is explicitly requested.
+- `/*.c, /*.h` → executable code lives in root.
 
 Never mix responsibilities.
 
@@ -125,3 +146,42 @@ Use:
   // hardware path
 #endif
 ``
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

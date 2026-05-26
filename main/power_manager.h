@@ -4,7 +4,7 @@
  * @version v0.6
  * @status validated
  * @date 2026-05-21
- * @hash sha256:8e74c8da0ac2dddc3b564b1f3cfe579ba035d4e263256d56929c19d291c53cac
+ * @hash sha256:72e674ca4401c302bb17abb50d91b76893f51b788a9b86a38fd80c3c7bf03f40
  *
  * Reglas:
  * - Sin YAML en headers
@@ -29,3 +29,43 @@ void set_peripheral_power(bool on);
 void enter_deep_sleep(uint32_t duration_min);
 
 #endif /* POWER_MANAGER_H */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

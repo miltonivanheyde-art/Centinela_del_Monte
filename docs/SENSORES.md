@@ -6,10 +6,90 @@ ia_source: "Gemini Code Assist"
 status: "validated"
 version: "v0.1"
 date: "2026-05-21"
-hash: "sha256:3b423d0afdee9e40b2227d7d87e381ff9fbdb047d7ef11570b10ada4d8c5adb5"
+hash: "sha256:aed98bef01ea78dd995410be90ac48786a6ce2aa883ddb5327642735a94813b1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -28,4 +108,44 @@ hash: "sha256:3b423d0afdee9e40b2227d7d87e381ff9fbdb047d7ef11570b10ada4d8c5adb5"
 
 ## 3. Sensor de Integridad (Tamper Switch)
 - **Tipo:** Switch mecánico de contacto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

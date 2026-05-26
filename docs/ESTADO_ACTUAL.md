@@ -1,7 +1,7 @@
 ﻿---
 author: "Gemini PRO"
 date: "2026-05-20"
-hash: "sha256:b29d7df9c9a4bf8f390ac0ec3588767d9e8349e2430c32e188cddd8c8a89b247"
+hash: "sha256:0a002dbbb54c45174e523f6924bf2b53c0fefdf5109aeaf37f56ba019fcaa93b"
 ia_source: "Gemini Code Assist"
 model_version: "1.5-Pro"
 status: "validated"
@@ -9,7 +9,87 @@ title: "Estado Actual del Sistema"
 version: "v0.1"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -25,4 +105,44 @@ version: "v0.1"
 - [ ] Implementación de la FSM (Finite State Machine) en C++/Arduino.
 - [ ] Pruebas de consumo en Deep Sleep con el MOSFET de corte.
 - [ ] Validación de la cadena LoRa punto a punto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

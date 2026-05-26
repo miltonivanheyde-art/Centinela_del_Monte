@@ -5,9 +5,89 @@ ia_source: "Gemini Code Assist"
 version: "v0.1"
 date: "2026-05-21"
 status: "validated"
-hash: "sha256:965f494c7face19a5c4936e2a89d96d32990020276ea60730e657eafee942ca9"
+hash: "sha256:93043c220e0d94a783c46be54e0936d711bcc22bb3896860915d81d213e81e89"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Scripts de Automatización — Centinela del Monte
@@ -51,3 +131,43 @@ Se recomienda su ejecución antes de cada `push` o como parte de un pipeline de 
 
 ## Notas de Seguridad
 Estos scripts utilizan codificación **UTF8** y normalización de finales de línea para garantizar que el cálculo del hash sea determinístico en diferentes entornos operativos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

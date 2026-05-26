@@ -1,5 +1,6 @@
 --- a/h:/esp/CENTINELA_DEL_MONTE/firmware/power_manager.h
-+++ b/h:/esp/CENTINELA_DEL_MONTE/firmware/power_manager.h
+--- a/h:/esp/CENTINELA_DEL_MONTE/power_manager.h
++++ b/h:/esp/CENTINELA_DEL_MONTE/power_manager.h
 @@ -1,13 +1,12 @@
 +/*
 + * title: Contrato de Gestión de Energía
@@ -13,8 +14,8 @@
  
  /**
   * @file power_manager.h
---- a/h:/esp/CENTINELA_DEL_MONTE/firmware/power_manager.c
-+++ b/h:/esp/CENTINELA_DEL_MONTE/firmware/power_manager.c
+--- a/h:/esp/CENTINELA_DEL_MONTE/power_manager.c
++++ b/h:/esp/CENTINELA_DEL_MONTE/power_manager.c
 @@ -1,12 +1,11 @@
  /*
   * title: Implementación del Gestor de Energía

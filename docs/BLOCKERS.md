@@ -1,14 +1,94 @@
 ﻿---
 title: "Registro de Bloqueadores (Blockers)"
 author: "Gemini PRO"
-hash: "sha256:3034916abfdfc3db8ac4753550f956e98d56461f40076108943a777eaa30720a"
+hash: "sha256:368ded3758e17e03b5f1bcce72be0c33d0c35d4e178a5db7c479d081818f3832"
 reviewed_by: "Milton Heyde"
 status: "validated"
 version: "v0.1"
 date: "2026-05-21"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -24,5 +104,45 @@ date: "2026-05-21"
 
 - **Validación Humana:** Disponibilidad de revisores para la transición de `staging` a `release` según ADR-0002.
 - **Hardware:** Selección final de componentes críticos y proveedores para el cálculo de autonomía energética.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -5,10 +5,90 @@ status: "validated"
 author: "Gemini Code Assist"
 ia_source: "Gemini PRO"
 date: "2026-05-21"
-hash: "sha256:5ae1c3a928b4a723209ec8068a0441ce7f0b236f58303833308275b6fe351ab5"
+hash: "sha256:d6cc30f6bab3f9ff1be21b4b7fbdde66c7af61c7f0a1311f8e51fe1dcb4b825c"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Propósito
@@ -30,4 +110,44 @@ Este documento sirve como índice centralizado para todas las Decisiones de Arqu
 
 - Para entender una decisión específica, consulte el archivo ADR correspondiente en esta misma carpeta.
 - Las dependencias indican otros documentos o ADRs relevantes para la comprensión completa de la decisión.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

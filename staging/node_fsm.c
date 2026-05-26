@@ -1,15 +1,15 @@
--- -
+﻿-- -
 /*
- * title: Lógica de la Máquina de Estados (FSM)
- * version: v0.2
- * status: validated
- * author: Gemini Code Assist
- * ia_source: Gemini Code Assist
- * date: 2026-05-21
- * hash: sha256:pending_hash
+ * @title Lógica de la Máquina de Estados (FSM)
+ * @version v0.2
+ * @status validated
+ * @author Gemini Code Assist
+ * @ia_source Gemini Code Assist
+ * @date 2026-05-25
+ * @hash sha256:daa52cc4f3d25f1dada6195601c3df44ee18b1bca1100478c7b29930d8c93577
  * @file node_fsm.c
  * @brief Implementación de la lógica de transiciones de estado.
- * @ref firmware/docs/ESTADOS_DEL_NODO_IMPL_v0.1.md
+ * @ref docs/ESTADOS_DEL_NODO_IMPL_v0.1.md
  */
 
 #include <stdlib.h>
@@ -49,3 +49,15 @@ void handle_panic(void)
         // Loop infinito de seguridad
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
