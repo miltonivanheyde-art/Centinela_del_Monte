@@ -1,3 +1,10 @@
+/*
+ * @file heartbeat.h
+ * @brief Contrato del latido doctrinal.
+ * @version v0.2
+ * @status validated
+ * @date 2026-05-25
+ */
 
 #ifndef HEARTBEAT_H
 #define HEARTBEAT_H

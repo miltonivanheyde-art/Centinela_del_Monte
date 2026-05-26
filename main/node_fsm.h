@@ -1,20 +1,16 @@
-#ifndef NODE_STATES_H
-#define NODE_STATES_H
+/*
+ * @file node_fsm.h
+ * @brief Wrapper de compatibilidad para la FSM
+ * @version v0.2
+ * @status validated
+ * @date 2026-05-25
+ */
 
-#include <stdint.h>
+#ifndef NODE_FSM_H
+#define NODE_FSM_H
 
-typedef enum {
-    STATE_INIT = 0,
-    STATE_IDLE,
-    STATE_RESERVE,
-    STATE_CRITICAL
-} node_state_t;
+#include "node_states.h"
 
-/* Estado global (definido en main.c) */
-extern node_state_t current_state;
+/* No definir nada aquí: evitar duplicación */
 
-/* FSM API */
-void run_fsm_iteration(void);
-void handle_panic(void);
-
-#endif /* NODE_STATES_H */
+#endif /* NODE_FSM_H */

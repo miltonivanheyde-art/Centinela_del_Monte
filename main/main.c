@@ -1,15 +1,9 @@
-﻿/*
+/*
  * @file main.c
  * @brief Punto de entrada del Nodo Centinela
- * @version v0.1
+ * @version v0.2
  * @status validated
- * @date 2026-05-21
- * @hash sha256:ba3ec75b3bff300251923418b273f7c6ef827d48c9944900affc0ed4ec5d94f8
- *
- * Reglas:
- * - Sin YAML
- * - Sin duplicación
- * - Determinismo
+ * @date 2026-05-25
  */
 
 #include "freertos/FreeRTOS.h"
@@ -25,7 +19,7 @@ static const char *TAG = "MAIN";
 /* Periodo de ciclo (ms) */
 #define LOOP_PERIOD_MS 1000
 
-/* Estado global requerido por node_fsm.c */
+/* Estado global compartido con la FSM */
 node_state_t current_state = STATE_INIT;
 
 void app_main(void)
@@ -39,58 +33,16 @@ void app_main(void)
     {
         run_fsm_iteration();
 
-        /* ejemplo: emitir heartbeat en estados no críticos */
-        if (current_state != STATE_CRITICAL)
-        {
-            process_heartbeat();
-        }
-
         if (current_state == STATE_CRITICAL)
         {
             ESP_LOGE(TAG, "STATE_CRITICAL -> PANIC");
             handle_panic();
         }
+        else
+        {
+            process_heartbeat();
+        }
 
         vTaskDelay(pdMS_TO_TICKS(LOOP_PERIOD_MS));
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
