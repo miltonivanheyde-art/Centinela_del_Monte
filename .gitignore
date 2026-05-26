@@ -1,18 +1,108 @@
-# ESP-IDF build
+# ===============================
+# 🔧 ESP-IDF / BUILD SYSTEM
+# ===============================
 build/
-main/build/
+sdkconfig.old
+sdkconfig.bak
+sdkconfig.tmp
 
-# logs
+# Binarios generados
+*.bin
+*.elf
+*.map
+
+# Archivos internos CMake / Ninja
+CMakeCache.txt
+cmake_install.cmake
+build.ninja
+.ninja_log
+.ninja_deps
+
+# ===============================
+# 📊 LOGS Y OUTPUTS
+# ===============================
 *.log
+*.out
+*.err
 
-# temp
+# dumps / archivos grandes peligrosos
+*_dump.*
+*.dump
+*dump*.txt
+
+# verbose / pruebas
+*verbose*
+*trace*
+*debug*
+
+# ===============================
+# 📁 ARCHIVOS TEMPORALES / LOCALES
+# ===============================
 *.tmp
+*.temp
+*.swp
 *.bak
-*.orig
 
-# IDE
-.cproject
-.project
+# Windows
+Thumbs.db
+desktop.ini
 
-# misc
-compile_commands.json
+# ===============================
+# 🧠 ARTIFACTOS DE TRABAJO (NO VERSIONAR)
+# ===============================
+firmware_core.*
+repo_dump.*
+*.patch
+
+# EXCEPCIÓN: staging sí guarda patches
+!staging/*.patch
+
+# ===============================
+# 🧪 TESTS / EXPERIMENTAL LOCAL
+# ===============================
+test_*.c
+*_smoke_*.c
+
+# excepción staging (querés versionarlos ahí)
+!staging/*.c
+
+# ===============================
+# 💻 IDE / EDITORES
+# ===============================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+*.code-workspace
+
+# ===============================
+# 📂 SCRIPTS GENERADOS
+# ===============================
+*.ps1.log
+*.sh.log
+
+# ===============================
+# 🔒 SEGURIDAD
+# ===============================
+*.key
+*.pem
+*.crt
+*.p12
+*.secrets
+
+# ===============================
+# ✅ DOCTRINA CENTINELA
+# ===============================
+
+# staging es válido
+!staging/
+!staging/**
+
+# docs SIEMPRE versionados
+!docs/
+!docs/**
+
+# auditorias SIEMPRE versionadas
+!auditorias/
+!auditorias/**
