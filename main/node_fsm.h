@@ -1,20 +1,30 @@
-#ifndef NODE_STATES_H
-#define NODE_STATES_H
+/*
+ * @file node_fsm.h
+ * @brief API del modulo FSM del nodo Centinela
+ * @version v0.2
+ * @status validated
+ * @date 2026-05-26
+ */
 
+#ifndef NODE_FSM_H
+#define NODE_FSM_H
+
+#include "node_states.h"
 #include <stdint.h>
 
-typedef enum {
-    STATE_INIT = 0,
-    STATE_IDLE,
-    STATE_RESERVE,
-    STATE_CRITICAL
-} node_state_t;
+/* Inicializacion de la FSM */
+void fsm_init(void);
 
-/* Estado global (definido en main.c) */
-extern node_state_t current_state;
-
-/* FSM API */
+/* Iteracion principal de la maquina de estados */
 void run_fsm_iteration(void);
+
+/* Transicion controlada de estado */
+void set_state(node_state_t new_state);
+
+/* Consulta del estado actual (evita acceso directo global) */
+node_state_t get_current_state(void);
+
+/* Manejo de condiciones criticas */
 void handle_panic(void);
 
-#endif /* NODE_STATES_H */
+#endif /* NODE_FSM_H */

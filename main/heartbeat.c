@@ -10,7 +10,7 @@
  */
 
 #include "heartbeat.h"
-#include "node_states.h"
+#include "node_fsm.h"
 #include "power_manager.h"
 #include "esp_log.h"
 
@@ -28,7 +28,7 @@ void process_heartbeat(void)
 
     payload.battery_mv = get_battery_voltage();
     payload.temp_cx10  = get_internal_temp();
-    payload.state_code = (uint8_t)current_state;
+    payload.state_code = (uint8_t)get_current_state();
     payload.timestamp  = (uint32_t)time(NULL);
 
     ESP_LOGI(TAG,

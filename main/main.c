@@ -17,7 +17,7 @@
 #include "esp_log.h"
 
 #include "power_manager.h"
-#include "node_states.h"
+#include "node_fsm.h"
 #include "heartbeat.h"
 
 static const char *TAG = "MAIN";
@@ -25,27 +25,24 @@ static const char *TAG = "MAIN";
 /* Periodo de ciclo (ms) */
 #define LOOP_PERIOD_MS 1000
 
-/* Estado global requerido por node_fsm.c */
-node_state_t current_state = STATE_INIT;
-
 void app_main(void)
 {
     ESP_LOGI(TAG, "Centinela del Monte - Booting");
 
     power_manager_init();
-    current_state = STATE_IDLE;
+    set_state(STATE_IDLE);
 
     while (1)
     {
         run_fsm_iteration();
 
         /* ejemplo: emitir heartbeat en estados no críticos */
-        if (current_state != STATE_CRITICAL)
+        if (get_current_state() != STATE_CRITICAL)
         {
             process_heartbeat();
         }
 
-        if (current_state == STATE_CRITICAL)
+        if (get_current_state() == STATE_CRITICAL)
         {
             ESP_LOGE(TAG, "STATE_CRITICAL -> PANIC");
             handle_panic();

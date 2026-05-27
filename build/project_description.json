@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "centinela_del_monte",
-    "project_version":    "3aaaf0b-dirty",
+    "project_version":    "f5edf7f-dirty",
     "project_path":       "H:/esp/CENTINELA_DEL_MONTE",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "H:/esp/CENTINELA_DEL_MONTE/build",
@@ -11,7 +11,7 @@
     "app_elf":            "centinela_del_monte.elf",
     "app_bin":            "centinela_del_monte.bin",
     "build_type":         "flash_app",
-    "git_revision":       "HEAD-HASH-NOTFOUND",
+    "git_revision":       "v5.3.1-dirty",
     "target":             "esp32",
     "rev":                "0",
     "min_rev":            "0",

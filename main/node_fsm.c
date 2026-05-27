@@ -13,7 +13,7 @@
  */
 
 #include <stdlib.h>
-#include "node_states.h"
+#include "node_fsm.h"
 #include "power_manager.h"
 #include "esp_log.h"
 
@@ -23,7 +23,22 @@ static const char *TAG = "FSM";
 #define TEMP_CRITICAL_THRESHOLD 600 // 60.0°C
 #define VBAT_RESERVE_THRESHOLD 3100 // mV
 
-extern node_state_t current_state;
+static node_state_t current_state = STATE_INIT;
+
+void fsm_init(void)
+{
+    set_state(STATE_INIT);
+}
+
+void set_state(node_state_t new_state)
+{
+    current_state = new_state;
+}
+
+node_state_t get_current_state(void)
+{
+    return current_state;
+}
 
 void run_fsm_iteration(void)
 {
@@ -31,17 +46,17 @@ void run_fsm_iteration(void)
     if (temp > TEMP_CRITICAL_THRESHOLD)
     {
         ESP_LOGE(TAG, "CRITICAL: Temp = %d.%d C", temp / 10, abs(temp % 10));
-        current_state = STATE_CRITICAL;
+        set_state(STATE_CRITICAL);
         return;
     }
 
     uint16_t vbat = get_battery_voltage();
     if (vbat < VBAT_RESERVE_THRESHOLD &&
-        current_state != STATE_RESERVE &&
-        current_state != STATE_CRITICAL)
+        get_current_state() != STATE_RESERVE &&
+        get_current_state() != STATE_CRITICAL)
     {
         ESP_LOGW(TAG, "Low battery: %u mV -> RESERVE", (unsigned)vbat);
-        current_state = STATE_RESERVE;
+        set_state(STATE_RESERVE);
     }
 }
 

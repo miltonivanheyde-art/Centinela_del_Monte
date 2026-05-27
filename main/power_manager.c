@@ -18,7 +18,6 @@
 
 #ifndef SIMULATE_POWER
 #include "driver/rtc_io.h"
-#include "driver/temperature_sensor.h"
 #include "driver/gpio.h"
 #include "driver/adc.h"
 #include "esp_sleep.h"
@@ -31,6 +30,7 @@ static const char *TAG = "PM";
 #define PIN_GPIO_POWER_ENABLE GPIO_NUM_3
 #define PIN_GPIO_RTC_INT GPIO_NUM_15
 #define ADC_VBAT_CHANNEL ADC1_CHANNEL_1
+#define ADC_VBAT_ATTEN ADC_ATTEN_DB_12
 #define PIN_I2C_SDA GPIO_NUM_4
 #define PIN_I2C_SCL GPIO_NUM_5
 
@@ -74,11 +74,11 @@ void power_manager_init(void)
     set_peripheral_power(false);
 
     adc1_config_width(ADC_WIDTH_BIT_12);
-    adc1_config_channel_atten(ADC_VBAT_CHANNEL, ADC_ATTEN_DB_11);
+    adc1_config_channel_atten(ADC_VBAT_CHANNEL, ADC_VBAT_ATTEN);
 
     esp_adc_cal_characterize(
         ADC_UNIT_1,
-        ADC_ATTEN_DB_11,
+        ADC_VBAT_ATTEN,
         ADC_WIDTH_BIT_12,
         1100,
         &adc_chars);
@@ -112,28 +112,9 @@ int16_t get_internal_temp(void)
 #ifdef SIMULATE_POWER
     return 255; // 25.5°C
 #else
-    /* TSENS driver para ESP32-S3 */
-    static temperature_sensor_handle_t temp_handle = NULL;
-    if (temp_handle == NULL)
-    {
-        temperature_sensor_config_t temp_sensor = TEMPERATURE_SENSOR_CONFIG_DEFAULT(10, 50);
-        if (temperature_sensor_install(&temp_sensor, &temp_handle) != ESP_OK)
-        {
-            ESP_LOGE(TAG, "Fallo al instalar TSENS");
-            return 0;
-        }
-    }
-
-    float tsens_out;
-    temperature_sensor_enable(temp_handle);
-    if (temperature_sensor_get_temp(temp_handle, &tsens_out) != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Fallo al leer TSENS");
-        temperature_sensor_disable(temp_handle);
-        return 0;
-    }
-    temperature_sensor_disable(temp_handle);
-    return (int16_t)roundf(tsens_out * 10.0f);
+    /* Stub seguro temporal: TSENS desactivado por compatibilidad ESP-IDF 5.3.1 */
+    ESP_LOGW(TAG, "Internal temp sensor disabled; returning stub value");
+    return 250; // 25.0°C
 #endif
 }
 

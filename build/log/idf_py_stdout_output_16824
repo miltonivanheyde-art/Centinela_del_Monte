@@ -1,13 +1,5 @@
--- IDF_TARGET not set, using default target: esp32
+-- IDF_TARGET is not set, guessed 'esp32' from sdkconfig 'H:/esp/CENTINELA_DEL_MONTE/sdkconfig'
 -- Found Git: C:/Espressif/tools/idf-git/2.44.0/cmd/git.exe (found version "2.44.0.windows.1") 
--- git rev-parse returned 'fatal: detected dubious ownership in repository at 'C:/Espressif/frameworks/esp-idf-v5.3.1'
-'C:/Espressif/frameworks/esp-idf-v5.3.1' is owned by:
-	BUILTIN/Administradores (S-1-5-32-544)
-but the current user is:
-	NerO/NerO (S-1-5-21-562803832-447521502-2541270012-1001)
-To add an exception for this directory, call:
-
-	git config --global --add safe.directory C:/Espressif/frameworks/esp-idf-v5.3.1'
 -- ccache will be used for faster recompilation
 -- The C compiler identification is GNU 13.2.0
 -- The CXX compiler identification is GNU 13.2.0
@@ -32,7 +24,7 @@ To add an exception for this directory, call:
 -- Found Threads: TRUE  
 -- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
 -- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
--- App "centinela_del_monte" version: 3aaaf0b-dirty
+-- App "centinela_del_monte" version: f5edf7f-dirty
 -- Adding linker script H:/esp/CENTINELA_DEL_MONTE/build/esp-idf/esp_system/ld/memory.ld
 -- Adding linker script H:/esp/CENTINELA_DEL_MONTE/build/esp-idf/esp_system/ld/sections.ld.in
 -- Adding linker script C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/esp32/ld/esp32.rom.ld

@@ -30,7 +30,7 @@ Antes de cada respuesta o modificación de código, DEBO:
 2) **Verificar Integridad del cambio**: confirmar que NO introduzco duplicación, código muerto ni estructura inválida. No exigir YAML en `.c/.h`.  
 3) **Chequeo de Duplicidad**: buscar redundancias (TAGs, defines, funciones, returns, logs, app_main).  
 4) **Validación Estructural (estado actual del repo)**:
-   - Si **/firmware NO existe**, tratar **la raíz del repositorio** como capa de firmware.
+   - El firmware operativo oficial vive en **/main**.
    - No mover archivos ni crear carpetas nuevas a menos que el usuario lo ordene explícitamente.
    - No “arreglar” estructura del repo por iniciativa propia.
 5) **Gobernanza**:
@@ -57,9 +57,9 @@ Your output must:
 - `/scripts` → automation
 - `/auditorias` → validation evidence
 - `/staging` → experimental artifacts
-- `/firmware` → executable code ONLY (si existe)
+- `/main` → firmware operativo (código ejecutable)
 
-**IMPORTANT**: if `/firmware` does not exist, firmware code lives in repository root until migration is explicitly requested.
+**IMPORTANT**: firmware code must remain in `/main` unless an explicit migration is requested by the human owner.
 
 Never mix responsibilities.
 

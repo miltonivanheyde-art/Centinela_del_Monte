@@ -19,12 +19,12 @@ Este repositorio actúa como la "Memoria Maestra" del sistema, donde cada decisi
 ## Reglas de interpretación para IA
 1. **Determinismo:** Las IAs deben operar bajo un modelo determinístico.
 2. **Gobernanza cognitiva:** Respetar DOCTRINA.md y flujo de trabajo.
-3. **Continuidad semántica:** Mantener coherencia entre `/docs` y `/firmware`.
+3. **Continuidad semántica:** Mantener coherencia entre `/docs` y `/main`.
 4. **No duplicación:** Nunca generar metadata duplicada.
 
 ## Arquitectura del repositorio
 - `/docs`: Doctrina y ADRs
-- `/firmware`: Implementación
+- `/main`: Implementación de firmware operativo
 - `/hardware`: Diseño físico
 - `/scripts`: Automatización
 - `/auditorias`: Evidencia

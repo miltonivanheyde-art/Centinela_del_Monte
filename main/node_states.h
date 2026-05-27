@@ -11,8 +11,6 @@ typedef enum
     STATE_CRITICAL
 } node_state_t;
 
-extern node_state_t current_state;
-
 void run_fsm_iteration(void);
 void handle_panic(void);
 

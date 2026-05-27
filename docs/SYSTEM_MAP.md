@@ -33,17 +33,17 @@ graph TD
     end
 
     subgraph Derivación Técnica (Capa de Ingeniería)
-        SPEC_E --> F_DOC_E[firmware/docs/ESTADOS_DEL_NODO_IMPL_v0.1.md]
-        SPEC_H --> F_DOC_H[firmware/docs/HEARTBEAT_IMPL_v0.1.md]
-        SPEC_P --> F_DOC_P[firmware/docs/POWER_STRATEGY_IMPL_v0.1.md]
+        SPEC_E --> F_DOC_E[docs/ESTADOS_DEL_NODO_IMPL_v0.1.md]
+        SPEC_H --> F_DOC_H[docs/HEARTBEAT_v0.1.md]
+        SPEC_P --> F_DOC_P[docs/POWER_STRATEGY_v0.1.md]
     end
 
     subgraph Implementación de Firmware (Capa de Ingeniería)
-        F_DOC_E --> F_SRC_FSM[firmware/src/node_fsm.c]
-        F_DOC_H --> F_SRC_HB[firmware/src/heartbeat.c]
-        F_DOC_P --> F_SRC_PM[firmware/src/power_manager.c]
-        F_SRC_FSM & F_SRC_HB & F_SRC_PM --> F_SRC_MAIN[firmware/src/main.c]
-        F_SRC_MAIN --> F_INC[firmware/include/]
+        F_DOC_E --> F_SRC_FSM[main/node_fsm.c]
+        F_DOC_H --> F_SRC_HB[main/heartbeat.c]
+        F_DOC_P --> F_SRC_PM[main/power_manager.c]
+        F_SRC_FSM & F_SRC_HB & F_SRC_PM --> F_SRC_MAIN[main/main.c]
+        F_SRC_MAIN --> F_INC[main/*.h]
     end
 
     subgraph Hardware (Capa de Ingeniería)
@@ -87,7 +87,7 @@ graph TD
 1.  **Gobernanza y Doctrina**: Define el "por qué" y las reglas del proyecto.
 2.  **Especificaciones Canónicas**: Documentos maestros de requisitos.
 3.  **Derivación Técnica**: Traducción de requisitos a detalles de implementación.
-4.  **Firmware**: Código embebido para el nodo Centinela.
+4.  **Firmware (`main/`)**: Código embebido operativo para el nodo Centinela.
 5.  **Hardware**: Diseño físico y componentes del nodo.
 6.  **Backend**: Infraestructura para la recolección y gestión de datos.
 7.  **Tests**: Verificación de la conformidad de la implementación.
