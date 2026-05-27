@@ -1,10 +1,10 @@
 # RISK_REGISTER_v1
 
 ## 1. Identidad del sistema
-El registro de riesgos de Centinela aborda una infraestructura territorial resiliente en fase investor-ready baseline, con foco en continuidad operativa y despliegue real.
+Registro de riesgos operativos de la etapa investor-ready baseline.
 
 ## 2. Función operativa
-Su función es explicitar incertidumbres críticas antes de escalar: despliegue, operación en campo, adopción y gobernanza de evolución.
+Explicitar incertidumbres críticas de despliegue y operación antes de escalar.
 
 ## 3. Componentes / flujo
 Riesgos prioritarios:
@@ -21,7 +21,7 @@ Flujo de gestión:
 4. Ajuste de plan antes de escalar.
 
 ## 4. Relación doctrinal
-El registro mantiene coherencia con la doctrina al priorizar verificabilidad, sobriedad y separación entre promesa narrativa y capacidad técnica real.
+El registro prioriza verificabilidad y sobriedad entre narrativa y capacidad real.
 
 ## 5. Relevancia para inversor
-Ofrece una lectura clara del perfil de riesgo pre-seed: dónde están los principales puntos de fallo potencial y cómo se propone reducirlos sin comprometer el core técnico.
+Ofrece una lectura clara del perfil de riesgo pre-seed y su mitigación por etapas.

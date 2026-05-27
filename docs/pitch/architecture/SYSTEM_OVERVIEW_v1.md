@@ -1,10 +1,10 @@
 # SYSTEM_OVERVIEW_v1
 
 ## 1. Identidad del sistema
-Centinela del Monte es una infraestructura territorial resiliente orientada a sostener señales operativas en contextos rurales de baja conectividad. Se define como sistema de persistencia operativa, no como producto de consumo aislado.
+Centinela del Monte es una infraestructura territorial resiliente orientada a sostener señales operativas en contextos rurales de baja conectividad.
 
 ## 2. Función operativa
-Su función operativa es mantener continuidad de observación y estado en campo para reducir incertidumbre rural en decisiones de operación, mantenimiento y priorización territorial.
+Mantener continuidad de observación y estado en campo para habilitar decisión territorial con menor incertidumbre.
 
 ## 3. Componentes / flujo
 - Nodo de campo: captura y persistencia local de señal operativa.
@@ -17,11 +17,17 @@ Flujo base:
 3. Agregación por gateway.
 4. Disponibilización para supervisión y decisión de campo.
 
+Diagrama sintético:
+```mermaid
+flowchart LR
+    T["Territorio rural"] --> N["Nodo de campo"]
+    N --> G["Gateway rural"]
+    G --> S["Supervisión operativa"]
+    S --> D["Decisión territorial"]
+```
+
 ## 4. Relación doctrinal
-Este sistema implementa la doctrina de infraestructura territorial resiliente mediante:
-- persistencia operativa bajo restricciones reales,
-- separación clara entre core técnico y narrativa inversor,
-- trazabilidad entre arquitectura técnica y uso operativo.
+Ver definición canónica en secciones 1 y 2 de este documento.
 
 ## 5. Relevancia para inversor
-La propuesta permite evaluar una tesis de infraestructura con foco en continuidad y desriesgo territorial. El valor inversor en esta fase es habilitar validación de despliegue y evidencia operativa sin comprometer estabilidad del baseline técnico.
+Proporciona comprensión operacional del sistema para interpretar riesgo de despliegue y factibilidad de validación territorial.
