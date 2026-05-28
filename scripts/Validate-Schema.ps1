@@ -5,8 +5,8 @@
 #>
 
 # Configuración de rutas y campos obligatorios
-$basePath = "h:\OneDrive\Archivos de Microsoft Copilot Chat\CENTINELA_DEL_MONTE"
-$technicalLayers = @("firmware", "hardware")
+$basePath = "h:\esp\CENTINELA_DEL_MONTE"
+$technicalLayers = @("main", "hardware")
 $mandatoryFields = @("title", "author", "ia_source", "version", "date", "hash", "status")
 
 Write-Host "--- Auditoría de Gobernanza: Verificación de Esquema YAML ---" -ForegroundColor Cyan
@@ -66,7 +66,7 @@ $reportPath = Join-Path $auditDir "SCHEMA-VALIDATION-$((Get-Date).ToString('yyyy
 $reportContent = "# Reporte de Validación de Esquema YAML — $((Get-Date).ToString('yyyy-MM-dd'))`n`n"
 
 if ($failedFiles.Count -eq 0) {
-    $reportContent += "✅ Todos los archivos en /firmware y /hardware cumplen con el esquema obligatorio.`n"
+    $reportContent += "✅ Todos los archivos en /main y /hardware cumplen con el esquema obligatorio.`n"
 }
 else {
     $reportContent += "❌ Se detectaron fallos en los siguientes archivos:`n`n"
