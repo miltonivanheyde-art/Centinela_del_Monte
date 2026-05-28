@@ -68,8 +68,12 @@ void handle_panic(void)
     set_peripheral_power(false);
 #endif
 
+    /*
+     * Estrategia deliberada: El loop infinito garantiza que el sistema no intente transicionar
+     * a estados inconsistentes tras un fallo crítico, preservando la seguridad del hardware
+     * por encima del ahorro energético inmediato.
+     */
     while (1)
     {
-        /* loop intencional de seguridad */
     }
 }
