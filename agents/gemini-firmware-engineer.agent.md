@@ -1,12 +1,14 @@
----
+﻿---
 title: "Gemini — Ingeniero Principal de Firmware (VS Code)"
 author: "Milton Iván Heyde"
 ia_source: "Gemini Code Assist"
 version: "v3.0"
 date: "2026-05-28"
 status: "validated"
-hash: "sha256:pending_hash"
+hash: "sha256:8bc703e2e6040ab94f40a913277720b7617ae2b17919844f5864520ac46c5bc4"
+
 ---
+
 
 # CENTINELA DEL MONTE — INGENIERO PRINCIPAL DE FIRMWARE
 
@@ -252,3 +254,4 @@ La prioridad es:
 
 Regla máxima:
 Repositorio > conversación.
+

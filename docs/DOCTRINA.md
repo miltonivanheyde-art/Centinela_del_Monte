@@ -1,12 +1,14 @@
----
+﻿---
 title: "Documento de Integración del Proyecto (DIP) v0.2"
 author: "Copilot"
 ia_source: "Copilot"
 version: "0.2"
 date: "2026-05-21"
 status: "validated"
-hash: "sha256:4fbac05b06f9c1387f78e4afeb2abbd08d992f6d7363d7f6cbe41a50886d3273"
+hash: "sha256:ff92fa37e264c15abbada8770dd3ce098034f53490803295b2cf174ba109d95a"
+
 ---
+
 
 ## Documento de Integración del Proyecto (DIP) v0.1
 
@@ -55,3 +57,4 @@ version: "X.Y"
 date: "YYYY-MM-DD"
 hash: "sha256:<placeholder>"
 status: "draft/release"
+

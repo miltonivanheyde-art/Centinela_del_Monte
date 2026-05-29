@@ -1,4 +1,4 @@
----
+﻿---
 title: "Especificaciones Detalladas de Sensores"
 author: "Gemini PRO"
 reviewed_by: "Milton Heyde"
@@ -6,9 +6,11 @@ ia_source: "Gemini Code Assist"
 status: "validated"
 version: "v0.1"
 date: "2026-05-21"
-hash: "sha256:b755b20fa19ba32c08d4f774289d928db9f665f6c101aab960e9cacb530c7703"
+hash: "sha256:38c2d5e7b3404fd1d01129aacc04c82f10e36f0ed74a8d92a49f738e368b8b0f"
+
 
 ---
+
 
 
 # Especificaciones Detalladas de Sensores
@@ -26,3 +28,4 @@ hash: "sha256:b755b20fa19ba32c08d4f774289d928db9f665f6c101aab960e9cacb530c7703"
 
 ## 3. Sensor de Integridad (Tamper Switch)
 - **Tipo:** Switch mecánico de contacto.
+

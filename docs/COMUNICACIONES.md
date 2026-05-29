@@ -1,14 +1,16 @@
----
+﻿---
 author: "Gemini PRO"
 date: "2026-05-21"
-hash: "sha256:b64b3d9bb7ded59753e7f80711c5df034a371350218c1fd08a9b0d8a57aad7e8"
+hash: "sha256:d8c761603ce5e5a52291495d0f4365b1e4103556b90f67d67ec45488582e570b"
 ia_source: "Gemini Code Assist"
 reviewed_by: "Milton Heyde"
 status: "validated"
 title: "Especificaciones Detalladas de Comunicaciones"
 version: "v0.1"
 
+
 ---
+
 
 
 ## Especificaciones Detalladas de Comunicaciones
@@ -26,4 +28,5 @@ version: "v0.1"
 - **Ganancia:** Mínimo 3 dBi.
 - **Protección:** IP67, resistente a UV y condiciones climáticas extremas.
 - **Conector:** SMA o N-Type.
+
 

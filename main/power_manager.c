@@ -1,10 +1,10 @@
-/*
+﻿/*
  * @file power_manager.c
  * @brief Gestión determinística de energía para ESP32-S3.
  * @version v0.6
  * @status validated
  * @date 2026-05-21
- * @hash sha256:pending_hash
+ * @hash sha256:a8347198ed9a11fa5160e93bb89382f2285043373a3437df3be8ad75e45a0e2b
  *
  * Reglas:
  * - Sin YAML en código
@@ -147,3 +147,4 @@ void enter_deep_sleep(uint32_t duration_min)
     ESP_LOGI(TAG, "[MOCK] Deep sleep: %u min", (unsigned)duration_min);
 #endif
 }
+

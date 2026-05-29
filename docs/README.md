@@ -1,13 +1,15 @@
----
+﻿---
 title: "Capa de Backend - Centinela del Monte"
 version: "v0.1"
 status: "draft"
 author: "Gemini Code Assist"
 ia_source: "Gemini PRO"
 date: "2026-05-21"
-hash: "sha256:f542fadc509a41d3bb701c1216c699e0b52d09ceebce7a2a96106489ca513142"
+hash: "sha256:606d3a465d6aa92cd4fa5d44fffd05432d6f705881dfffa23a4849cf88d5ee08"
+
 
 ---
+
 
 ## Capa de Backend - Centinela del Monte
 
@@ -27,3 +29,4 @@ Contiene el código y la documentación para la infraestructura de servidor que 
 
 - **Firmware**: Para entender el formato de los payloads.
 - **Doctrina**: Para entender los requisitos de seguridad y trazabilidad de los datos.
+

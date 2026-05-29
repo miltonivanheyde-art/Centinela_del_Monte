@@ -1,10 +1,10 @@
-/*
+﻿/*
  * @file power_manager.h
  * @brief Contrato de la capa de gestión de energía
  * @version v0.6
  * @status validated
  * @date 2026-05-21
- * @hash sha256:pending_hash
+ * @hash sha256:8e74c8da0ac2dddc3b564b1f3cfe579ba035d4e263256d56929c19d291c53cac
  *
  * Reglas:
  * - Sin YAML en headers

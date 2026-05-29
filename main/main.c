@@ -1,10 +1,10 @@
-/*
+﻿/*
  * @file main.c
  * @brief Punto de entrada del Nodo Centinela
  * @version v0.1
  * @status validated
  * @date 2026-05-21
- * @hash sha256:pending_hash
+ * @hash sha256:c942070f4f13b3ebd7d4053550e766f07be946336f7b5beb072b293c4a5e67bd
  *
  * Reglas:
  * - Sin YAML
@@ -51,3 +51,4 @@ void app_main(void)
         vTaskDelay(pdMS_TO_TICKS(LOOP_PERIOD_MS));
     }
 }
+

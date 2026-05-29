@@ -1,10 +1,10 @@
-/*
+﻿/*
  * @file heartbeat.c
  * @brief Empaqueta y registra el latido doctrinal.
  * @version v0.1
  * @status validated
  * @date 2026-05-21
- * @hash sha256:pending_hash
+ * @hash sha256:0dbbdd2870dbcfabbd2f9cfde573299251ff56dd7699b4de29d4b54b2ee4b709
  *
  * Ref: docs/HEARTBEAT_v0.1.md
  */
@@ -42,3 +42,4 @@ void process_heartbeat(void)
     /* TODO: Integrar transmisión LoRa */
     ESP_LOGI(TAG, "Heartbeat processed");
 }
+

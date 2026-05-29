@@ -1,10 +1,10 @@
-/*
+﻿/*
  * @file node_fsm.c
  * @brief Lógica de la máquina de estados del nodo Centinela
  * @version v0.2
  * @status validated
  * @date 2026-05-21
- * @hash sha256:pending_hash
+ * @hash sha256:5e7d6db038243ca6538503f89e42519bfe8ac9de64a8f72e085d28547ec0226c
  *
  * Reglas:
  * - Sin YAML
@@ -77,3 +77,4 @@ void handle_panic(void)
     {
     }
 }
+
