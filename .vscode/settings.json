@@ -38,9 +38,10 @@
   "github.copilot.inlineSuggest.enable": true,
   "github.copilot.inlineSuggest.autoAccept": false,
   "[markdown]": {
-  "github.copilot.inlineSuggest.autoAccept": false
+    "github.copilot.inlineSuggest.autoAccept": false
   },
   "[powershell]": {
-  "github.copilot.inlineSuggest.autoAccept": true
-  }
+    "github.copilot.inlineSuggest.autoAccept": true
+  },
+  "idf.currentSetup": "C:/Espressif/frameworks/esp-idf-v5.3.1/"
 }
